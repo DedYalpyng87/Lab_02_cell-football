@@ -22,10 +22,11 @@
 
 | Страница в .drawio | Файл PNG | Содержание |
 |--------------------|----------|------------|
-| `00-title` | *по желанию* `export/00-title.png` | Титул: проект, ФИО, группа, ЛР 3–4 |
+| `00-title` | `export/00-title.png` | Титул: проект, ФИО, группа, ЛР 3–4 |
 | `02-domain-class` | `export/02-domain-class.png` | Доменная диаграмма классов |
 | `03-use-case` | `export/03-use-case.png` | Диаграмма вариантов использования |
-| 04-activity-human-move | `export/04-activity-human-move.png` | Деятельность: ход человека |
+| `04-activity-human-move`| `export/04-activity-human-move.png`| Деятельность: ход человека |
+| `05-activity-ai-move` | `export/05-activity-ai-move.png` | Деятельность: ход ИИ |
 
 После экспорта из diagrams.net проверь имя файла (иногда получается `*.drawio.png` — переименуй в имя из таблицы).
 
