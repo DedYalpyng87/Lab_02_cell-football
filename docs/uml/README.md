@@ -6,6 +6,7 @@
 **Требования:** [SRS.md](../SRS.md)  
 **Правила игры:** [game-rules.md](../game-rules.md)  
 **Глоссарий:** [glossary.md](glossary.md)  
+**Потоки событий (Use Case):** [use-case-scenarios.md](use-case-scenarios.md)  
 **Мокапы:** [mockups/](../../mockups/)
 
 ## Файлы в этой папке
@@ -15,7 +16,7 @@
 | `cell-football-lr34.drawio` | Проект diagrams.net: диаграммы на отдельных страницах |
 | `export/` | Экспорт диаграмм в PNG для GitHub и отчёта |
 | `glossary.md` | Глоссарий предметной области |
-| `use-case-scenarios.md` | Потоки событий по use case — *файл появится дальше по ЛР 3–4* |
+| `use-case-scenarios.md` | Потоки событий (Flow of events) по вариантам использования с диаграммы `03-use-case` |
 
 ## Страницы в draw.io → экспорт
 
@@ -33,4 +34,4 @@
 
 ---
 
-*По мере выполнения ЛР 3–4 сюда добавятся новые строки таблицы, файл `use-case-scenarios.md` и следующие PNG в `export/`.*
+*Дальше по ЛР 3–4: activity, sequence, state, уточнённая классовая, component, deployment — новые страницы в `.drawio` и строки в таблице выше + PNG в `export/`.*
