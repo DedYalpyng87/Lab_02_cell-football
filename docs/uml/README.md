@@ -31,6 +31,7 @@
 | `07-activity-exit-save` | `export/07-activity-exit-save.png` | Деятельность: выход и сохранение |
 | `08-seq-human-move` | `export/08-seq-human-move.png` | Последовательность: ход человека (успех и недопустимый ход) |
 | `11-seq-save` | `export/11-seq-save.png` | Последовательность: выход из партии и сохранение (UC-EXIT-01) |
+| `12-state-gui` | `export/12-state-gui.png` | Состояния GUI: навигация, матч, турнир |
 
 После экспорта из diagrams.net проверь имя файла (иногда получается `*.drawio.png` — переименуй в имя из таблицы).
 
