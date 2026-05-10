@@ -28,6 +28,7 @@
 | `04-activity-human-move`| `export/04-activity-human-move.png`| Деятельность: ход человека |
 | `05-activity-ai-move` | `export/05-activity-ai-move.png` | Деятельность: ход ИИ |
 | `06-activity-tournament` | `export/06-activity-tournament.png` | Деятельность: турнир |
+| `07-activity-exit-save` | `export/07-activity-exit-save.png` | Деятельность: выход и сохранение |
 
 После экспорта из diagrams.net проверь имя файла (иногда получается `*.drawio.png` — переименуй в имя из таблицы).
 
