@@ -33,6 +33,7 @@
 | `11-seq-save` | `export/11-seq-save.png` | Последовательность: выход из партии и сохранение (UC-EXIT-01) |
 | `12-state-gui` | `export/12-state-gui.png` | Состояния GUI: навигация, матч, турнир |
 | `13-class-refined` | `export/13-class-refined.png` | Уточнённая диаграмма классов (UI / сервисы / домен / хранилище) |
+| `14-components` | `export/14-components.png` | Компонентная диаграмма клиента v1.0 |
 
 После экспорта из diagrams.net проверь имя файла (иногда получается `*.drawio.png` — переименуй в имя из таблицы).
 

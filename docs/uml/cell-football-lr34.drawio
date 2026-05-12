@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" pages="11">
+<mxfile host="app.diagrams.net" pages="12">
   <diagram name="00-title" id="CDWZsDxPnd0cEf4PPSDT">
     <mxGraphModel dx="1030" dy="1713" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1770,6 +1770,123 @@
             <mxPoint x="990" y="350" as="sourcePoint" />
             <mxPoint x="1150" y="350" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="LArrr9e0Y9L9MSaZyS8F" name="14-components">
+    <mxGraphModel dx="1030" dy="544" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zZaoDmsmpHNlVYC4yeu--25" edge="1" parent="1" source="zZaoDmsmpHNlVYC4yeu--1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;dashPattern=1 2;" target="zZaoDmsmpHNlVYC4yeu--3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zZaoDmsmpHNlVYC4yeu--26" connectable="0" parent="zZaoDmsmpHNlVYC4yeu--25" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 11.7px; text-align: start; text-wrap-mode: wrap;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(204, 204, 204), rgb(255, 255, 255));&quot;&gt;запуск / навигация&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0364" y="-4" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZaoDmsmpHNlVYC4yeu--1" parent="1" style="html=1;dropTarget=0;whiteSpace=wrap;" value="&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12.6px; font-weight: 600; text-align: left; text-wrap-mode: nowrap;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(204, 204, 204), rgb(255, 255, 255));&quot;&gt;MobileApp&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="90" width="180" x="40" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zZaoDmsmpHNlVYC4yeu--2" parent="zZaoDmsmpHNlVYC4yeu--1" style="shape=module;jettyWidth=8;jettyHeight=4;" value="" vertex="1">
+          <mxGeometry height="20" relative="1" width="20" x="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZaoDmsmpHNlVYC4yeu--13" edge="1" parent="1" source="zZaoDmsmpHNlVYC4yeu--3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="zZaoDmsmpHNlVYC4yeu--5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="250" y="275" />
+              <mxPoint x="250" y="85" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZaoDmsmpHNlVYC4yeu--14" connectable="0" parent="zZaoDmsmpHNlVYC4yeu--13" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 11.7px; text-align: start; text-wrap-mode: wrap;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(204, 204, 204), rgb(255, 255, 255));&quot;&gt;партия, ход, выход&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.1636" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZaoDmsmpHNlVYC4yeu--15" edge="1" parent="1" source="zZaoDmsmpHNlVYC4yeu--3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="zZaoDmsmpHNlVYC4yeu--7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zZaoDmsmpHNlVYC4yeu--16" connectable="0" parent="zZaoDmsmpHNlVYC4yeu--15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 11.7px; text-align: start; text-wrap-mode: wrap;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(204, 204, 204), rgb(255, 255, 255));&quot;&gt;турнир: создание, сетка, результат&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.06" as="geometry">
+            <mxPoint x="3" y="13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZaoDmsmpHNlVYC4yeu--3" parent="1" style="html=1;dropTarget=0;whiteSpace=wrap;" value="&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12.6px; font-weight: 600; text-align: left; text-wrap-mode: nowrap;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(204, 204, 204), rgb(255, 255, 255));&quot;&gt;UI&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="90" width="180" x="40" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="zZaoDmsmpHNlVYC4yeu--4" parent="zZaoDmsmpHNlVYC4yeu--3" style="shape=module;jettyWidth=8;jettyHeight=4;" value="" vertex="1">
+          <mxGeometry height="20" relative="1" width="20" x="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZaoDmsmpHNlVYC4yeu--17" edge="1" parent="1" source="zZaoDmsmpHNlVYC4yeu--5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="zZaoDmsmpHNlVYC4yeu--9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zZaoDmsmpHNlVYC4yeu--18" connectable="0" parent="zZaoDmsmpHNlVYC4yeu--17" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 11.7px; text-align: start; text-wrap-mode: wrap;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(204, 204, 204), rgb(255, 255, 255));&quot;&gt;сохранение/загрузка партии&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.04" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZaoDmsmpHNlVYC4yeu--22" edge="1" parent="1" source="zZaoDmsmpHNlVYC4yeu--5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="zZaoDmsmpHNlVYC4yeu--11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="108" />
+              <mxPoint x="560" y="298" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZaoDmsmpHNlVYC4yeu--23" connectable="0" parent="zZaoDmsmpHNlVYC4yeu--22" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 11.7px; text-align: start; text-wrap-mode: wrap;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(204, 204, 204), rgb(255, 255, 255));&quot;&gt;чтение правил / проверка (данные)&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.6303" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZaoDmsmpHNlVYC4yeu--5" parent="1" style="html=1;dropTarget=0;whiteSpace=wrap;" value="&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12.6px; font-weight: 600; text-align: left; text-wrap-mode: nowrap;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(204, 204, 204), rgb(255, 255, 255));&quot;&gt;GameApplication&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="90" width="180" x="340" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zZaoDmsmpHNlVYC4yeu--6" parent="zZaoDmsmpHNlVYC4yeu--5" style="shape=module;jettyWidth=8;jettyHeight=4;" value="" vertex="1">
+          <mxGeometry height="20" relative="1" width="20" x="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZaoDmsmpHNlVYC4yeu--19" edge="1" parent="1" source="zZaoDmsmpHNlVYC4yeu--7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="zZaoDmsmpHNlVYC4yeu--9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zZaoDmsmpHNlVYC4yeu--20" connectable="0" parent="zZaoDmsmpHNlVYC4yeu--19" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 11.7px; text-align: start; text-wrap-mode: wrap;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(204, 204, 204), rgb(255, 255, 255));&quot;&gt;сохранение турнира&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.0568" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZaoDmsmpHNlVYC4yeu--7" parent="1" style="html=1;dropTarget=0;whiteSpace=wrap;" value="&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12.6px; font-weight: 600; text-align: left; text-wrap-mode: nowrap;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(204, 204, 204), rgb(255, 255, 255));&quot;&gt;TournamentModule&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="90" width="180" x="340" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="zZaoDmsmpHNlVYC4yeu--8" parent="zZaoDmsmpHNlVYC4yeu--7" style="shape=module;jettyWidth=8;jettyHeight=4;" value="" vertex="1">
+          <mxGeometry height="20" relative="1" width="20" x="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZaoDmsmpHNlVYC4yeu--9" parent="1" style="html=1;dropTarget=0;whiteSpace=wrap;" value="&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12.6px; font-weight: 600; text-align: left; text-wrap-mode: nowrap;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(204, 204, 204), rgb(255, 255, 255));&quot;&gt;Persistence&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="90" width="180" x="660" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="zZaoDmsmpHNlVYC4yeu--10" parent="zZaoDmsmpHNlVYC4yeu--9" style="shape=module;jettyWidth=8;jettyHeight=4;" value="" vertex="1">
+          <mxGeometry height="20" relative="1" width="20" x="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZaoDmsmpHNlVYC4yeu--11" parent="1" style="html=1;dropTarget=0;whiteSpace=wrap;" value="&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 12.6px; font-weight: 600; text-align: left; text-wrap-mode: nowrap;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(204, 204, 204), rgb(255, 255, 255));&quot;&gt;GameRulesData&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="90" width="180" x="660" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="zZaoDmsmpHNlVYC4yeu--12" parent="zZaoDmsmpHNlVYC4yeu--11" style="shape=module;jettyWidth=8;jettyHeight=4;" value="" vertex="1">
+          <mxGeometry height="20" relative="1" width="20" x="1" as="geometry">
+            <mxPoint x="-27" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZaoDmsmpHNlVYC4yeu--24" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 11.7px; font-weight: 600; text-align: start;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(204, 204, 204), rgb(255, 255, 255));&quot;&gt;14-components&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="120" x="370" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
