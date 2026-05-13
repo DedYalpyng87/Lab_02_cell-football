@@ -22,7 +22,7 @@
 
 | Страница в .drawio | Файл PNG | Содержание |
 |--------------------|----------|------------|
-| `00-title` | `export/00-title.png` | Титул: проект, ФИО, группа, ЛР 3–4 |
+| `00-title` | `export/00-title.png` | Титул: проект, ФИО, группа, ЛР 3–4 *(PNG при необходимости — экспорт из draw.io)* |
 | `02-domain-class` | `export/02-domain-class.png` | Доменная диаграмма классов |
 | `03-use-case` | `export/03-use-case.png` | Диаграмма вариантов использования |
 | `04-activity-human-move`| `export/04-activity-human-move.png`| Деятельность: ход человека |
@@ -44,4 +44,4 @@
 
 ---
 
-*Дальше по ЛР 3–4: activity, sequence, state, уточнённая классовая, component, deployment — новые страницы в `.drawio` и строки в таблице выше + PNG в `export/`.*
+*Набор UML по ЛР 3–4: страницы в `cell-football-lr34.drawio` и соответствующие PNG в `export/` — см. таблицу выше. Номера страниц 09–10 не используются (sequence: 08 и 11).*
