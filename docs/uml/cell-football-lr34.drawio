@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" pages="12">
+<mxfile host="app.diagrams.net" pages="13">
   <diagram name="00-title" id="CDWZsDxPnd0cEf4PPSDT">
     <mxGraphModel dx="1030" dy="1713" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1887,6 +1887,70 @@
         </mxCell>
         <mxCell id="zZaoDmsmpHNlVYC4yeu--24" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 11.7px; font-weight: 600; text-align: start;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(204, 204, 204), rgb(255, 255, 255));&quot;&gt;14-components&lt;/font&gt;&lt;/span&gt;" vertex="1">
           <mxGeometry height="30" width="120" x="370" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="q56onKP3RXdlWSG6PRa5" name="15-deployment">
+    <mxGraphModel dx="1212" dy="640" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="edHoDRKJ0gejcV3cIvBs-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 11.7px; font-weight: 600; text-align: start;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(204, 204, 204), rgb(255, 255, 255));&quot;&gt;15 — развёртывание (v1.0, клиент)&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="240" x="294" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="edHoDRKJ0gejcV3cIvBs-2" parent="1" style="verticalAlign=top;align=center;shape=cube;size=10;direction=south;fontStyle=0;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;" value="&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 11.7px; font-weight: 600;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(204, 204, 204), rgb(255, 255, 255));&quot;&gt;Смартфон пользователя&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="480" width="280" x="40" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="edHoDRKJ0gejcV3cIvBs-3" parent="edHoDRKJ0gejcV3cIvBs-2" style="verticalAlign=top;align=center;shape=cube;size=10;direction=south;html=1;boundedLbl=1;spacingLeft=5;whiteSpace=wrap;" value="&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 11.7px; font-weight: 600; text-align: start;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(204, 204, 204), rgb(255, 255, 255));&quot;&gt;Мобильная ОС&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="400" relative="1" width="250" as="geometry">
+            <mxPoint x="10" y="70" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edHoDRKJ0gejcV3cIvBs-23" edge="1" parent="edHoDRKJ0gejcV3cIvBs-2" source="edHoDRKJ0gejcV3cIvBs-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" target="edHoDRKJ0gejcV3cIvBs-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edHoDRKJ0gejcV3cIvBs-24" connectable="0" parent="edHoDRKJ0gejcV3cIvBs-23" style="edgeLabel;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" value="чтение / запись" vertex="1">
+          <mxGeometry relative="1" x="0.0056" as="geometry">
+            <mxPoint x="2" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edHoDRKJ0gejcV3cIvBs-5" parent="edHoDRKJ0gejcV3cIvBs-2" style="align=center;verticalAlign=middle;dashed=0;fontSize=12;fontColor=light-dark(#000000,#FFFFFF);whiteSpace=wrap;" value="Клеточный футбол&#xa;мобильное приложение v1.0" vertex="1">
+          <mxGeometry height="110" width="146.92" x="58.08" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="edHoDRKJ0gejcV3cIvBs-9" parent="edHoDRKJ0gejcV3cIvBs-2" style="align=center;verticalAlign=middle;dashed=0;whiteSpace=wrap;fontColor=light-dark(#000000,#FFFFFF);fontSize=12;" value="Локальные данные&#xa;NFR-03 (партия, турнир)" vertex="1">
+          <mxGeometry height="110" width="146.92" x="58.08" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="edHoDRKJ0gejcV3cIvBs-12" edge="1" parent="edHoDRKJ0gejcV3cIvBs-2" source="edHoDRKJ0gejcV3cIvBs-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.15;entryY=0.512;entryDx=0;entryDy=0;entryPerimeter=0;" target="edHoDRKJ0gejcV3cIvBs-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edHoDRKJ0gejcV3cIvBs-15" edge="1" parent="edHoDRKJ0gejcV3cIvBs-2" source="edHoDRKJ0gejcV3cIvBs-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=195;entryDy=0;entryPerimeter=0;dashed=1;" target="edHoDRKJ0gejcV3cIvBs-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="225" y="185" />
+              <mxPoint x="225" y="265" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edHoDRKJ0gejcV3cIvBs-16" connectable="0" parent="edHoDRKJ0gejcV3cIvBs-15" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontColor=light-dark(#000000,#FFFFFF);" value="&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 11.7px; font-weight: 600; text-align: start; text-wrap-mode: wrap;&quot;&gt;deploy&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.2635" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edHoDRKJ0gejcV3cIvBs-18" edge="1" parent="edHoDRKJ0gejcV3cIvBs-2" source="edHoDRKJ0gejcV3cIvBs-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0;entryDx=205;entryDy=250;entryPerimeter=0;dashed=1;labelBackgroundColor=none;fontColor=light-dark(#000000,#FFFFFF);" target="edHoDRKJ0gejcV3cIvBs-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="132" y="275" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edHoDRKJ0gejcV3cIvBs-19" connectable="0" parent="edHoDRKJ0gejcV3cIvBs-18" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" value="&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 11.7px; font-weight: 600; text-align: start; text-wrap-mode: wrap;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(204, 204, 204), rgb(255, 255, 255));&quot;&gt;deploy&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0685" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edHoDRKJ0gejcV3cIvBs-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-size: 11.7px; font-weight: 600; text-align: start;&quot;&gt;&lt;font style=&quot;color: light-dark(rgb(204, 204, 204), rgb(255, 255, 255));&quot;&gt;В v1.0 нет игрового сервера (SRS §6.3)&lt;/font&gt;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="30" width="270" x="360" y="320" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
