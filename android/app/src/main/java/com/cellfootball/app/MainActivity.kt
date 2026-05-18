@@ -25,6 +25,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
 import dev.jeziellago.compose.markdowntext.MarkdownText
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -71,20 +77,43 @@ fun MenuScreen(
     onPlay: () -> Unit,
     onRules: () -> Unit
 ) {
-    Column(
-        modifier = modifier
-            .fillMaxSize()
-            .padding(24.dp),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
+    Box(
+        modifier = modifier.fillMaxSize()
     ) {
-        Text("Клеточный футбол", style = MaterialTheme.typography.headlineSmall)
-        Text("MVP v0 — ЛР 5", style = MaterialTheme.typography.bodyMedium)
-        Button(onClick = onPlay, modifier = Modifier.padding(top = 24.dp)) {
-            Text("Играть")
-        }
-        Button(onClick = onRules, modifier = Modifier.padding(top = 12.dp)) {
-            Text("Правила")
+        Image(
+            painter = painterResource(R.drawable.pole),
+            contentDescription = null,
+            modifier = Modifier.fillMaxSize(),
+            contentScale = ContentScale.Crop
+        )
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(Color.Black.copy(alpha = 0.35f))
+        )
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(24.dp),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Text(
+                "Клеточный футбол",
+                style = MaterialTheme.typography.headlineMedium,
+                color = Color.White
+            )
+            Text(
+                "MVP v0 — ЛР 5",
+                style = MaterialTheme.typography.bodyMedium,
+                color = Color.White.copy(alpha = 0.9f)
+            )
+            Button(onClick = onPlay, modifier = Modifier.padding(top = 24.dp)) {
+                Text("Играть")
+            }
+            Button(onClick = onRules, modifier = Modifier.padding(top = 12.dp)) {
+                Text("Правила")
+            }
         }
     }
 }
