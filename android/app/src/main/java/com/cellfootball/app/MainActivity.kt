@@ -6,8 +6,11 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
@@ -19,7 +22,9 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.unit.dp
+import dev.jeziellago.compose.markdowntext.MarkdownText
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -73,7 +78,7 @@ fun MenuScreen(
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Text("Клеточный футбол", style = MaterialTheme.typography.headlineMedium)
+        Text("Клеточный футбол", style = MaterialTheme.typography.headlineSmall)
         Text("MVP v0 — ЛР 5", style = MaterialTheme.typography.bodyMedium)
         Button(onClick = onPlay, modifier = Modifier.padding(top = 24.dp)) {
             Text("Играть")
@@ -109,18 +114,35 @@ fun RulesScreen(
     modifier: Modifier = Modifier,
     onBack: () -> Unit
 ) {
+    val context = LocalContext.current
+    val rulesText = remember {
+        AssetTextLoader.load(context, "game-rules.md")
+    }
+
     Column(
         modifier = modifier
             .fillMaxSize()
-            .padding(24.dp)
+            .padding(horizontal = 16.dp)
     ) {
-        Text("Правила (кратко)", style = MaterialTheme.typography.headlineSmall)
-        Text(
-            "Полный текст — в репозитории: docs/game-rules.md. " +
-                    "В приложении позже будет экран со встроенным просмотром.",
-            modifier = Modifier.padding(top = 12.dp)
-        )
-        Button(onClick = onBack, modifier = Modifier.padding(top = 24.dp)) {
+        LazyColumn(
+            modifier = Modifier.weight(1f),
+            contentPadding = PaddingValues(bottom = 8.dp)
+        ) {
+            item {
+                MarkdownText(
+                    markdown = rulesText,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(top = 16.dp)
+                )
+            }
+        }
+        Button(
+            onClick = onBack,
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(bottom = 16.dp)
+        ) {
             Text("Назад")
         }
     }
