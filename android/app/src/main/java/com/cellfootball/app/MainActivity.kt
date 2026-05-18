@@ -31,6 +31,8 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.sp
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,23 +47,47 @@ class MainActivity : ComponentActivity() {
 }
 
 private enum class Screen {
-    Menu, Game, Rules
+    Menu, ModeSelection, Game, Tournament, Rules
+}
+
+private enum class GameMode(val label: String) {
+    VsAi("Против ИИ"),
+    LocalPvp("Два игрока")
 }
 
 @Composable
 fun CellFootballApp() {
     var screen by remember { mutableStateOf(Screen.Menu) }
+    var selectedMode by remember { mutableStateOf<GameMode?>(null) }
 
     Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
         when (screen) {
             Screen.Menu -> MenuScreen(
                 modifier = Modifier.padding(innerPadding),
-                onPlay = { screen = Screen.Game },
+                onPlay = { screen = Screen.ModeSelection },
                 onRules = { screen = Screen.Rules }
+            )
+            Screen.ModeSelection -> ModeSelectionScreen(
+                modifier = Modifier.padding(innerPadding),
+                onVsAi = {
+                    selectedMode = GameMode.VsAi
+                    screen = Screen.Game
+                },
+                onLocalPvp = {
+                    selectedMode = GameMode.LocalPvp
+                    screen = Screen.Game
+                },
+                onTournament = { screen = Screen.Tournament },
+                onBack = { screen = Screen.Menu }
             )
             Screen.Game -> GamePlaceholderScreen(
                 modifier = Modifier.padding(innerPadding),
+                mode = selectedMode,
                 onBack = { screen = Screen.Menu }
+            )
+            Screen.Tournament -> TournamentPlaceholderScreen(
+                modifier = Modifier.padding(innerPadding),
+                onBack = { screen = Screen.ModeSelection }
             )
             Screen.Rules -> RulesScreen(
                 modifier = Modifier.padding(innerPadding),
@@ -99,16 +125,19 @@ fun MenuScreen(
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
-                "Клеточный футбол",
-                style = MaterialTheme.typography.headlineMedium,
-                color = Color.White
+                text = "Клеточный футбол",
+                style = MaterialTheme.typography.headlineLarge.copy(
+                    fontSize = 34.sp,
+                    fontWeight = FontWeight.Bold
+                ),
+                color = Color(0xFFFF9800)
             )
             Text(
                 "MVP v0 — ЛР 5",
                 style = MaterialTheme.typography.bodyMedium,
                 color = Color.White.copy(alpha = 0.9f)
             )
-            Button(onClick = onPlay, modifier = Modifier.padding(top = 24.dp)) {
+            Button(onClick = onPlay, modifier = Modifier.padding(top = 56.dp)) {
                 Text("Играть")
             }
             Button(onClick = onRules, modifier = Modifier.padding(top = 12.dp)) {
@@ -119,8 +148,57 @@ fun MenuScreen(
 }
 
 @Composable
-fun GamePlaceholderScreen(
+fun ModeSelectionScreen(
     modifier: Modifier = Modifier,
+    onVsAi: () -> Unit,
+    onLocalPvp: () -> Unit,
+    onTournament: () -> Unit,
+    onBack: () -> Unit
+) {
+    Box(modifier = modifier.fillMaxSize()) {
+        Image(
+            painter = painterResource(R.drawable.game),
+            contentDescription = null,
+            modifier = Modifier.fillMaxSize(),
+            contentScale = ContentScale.Crop
+        )
+        Box(
+            modifier = Modifier
+                .fillMaxSize()
+                .background(Color.Black.copy(alpha = 0.35f))
+        )
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(24.dp),
+            verticalArrangement = Arrangement.Center,
+            horizontalAlignment = Alignment.CenterHorizontally
+        ) {
+            Text(
+                text = "Выбор режима",
+                style = MaterialTheme.typography.headlineMedium,
+                color = Color.White
+            )
+            Button(onClick = onVsAi, modifier = Modifier.padding(top = 24.dp)) {
+                Text("Против ИИ")
+            }
+            Button(onClick = onLocalPvp, modifier = Modifier.padding(top = 12.dp)) {
+                Text("Два игрока")
+            }
+            Button(onClick = onTournament, modifier = Modifier.padding(top = 12.dp)) {
+                Text("Турнир")
+            }
+            Button(onClick = onBack, modifier = Modifier.padding(top = 24.dp)) {
+                Text("Назад")
+            }
+        }
+    }
+}
+
+@Composable
+private fun GamePlaceholderScreen(
+    modifier: Modifier = Modifier,
+    mode: GameMode?,
     onBack: () -> Unit
 ) {
     Column(
@@ -131,7 +209,35 @@ fun GamePlaceholderScreen(
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         Text("Игровой экран", style = MaterialTheme.typography.headlineSmall)
+        Text(
+            text = "Режим: ${mode?.label ?: "—"}",
+            modifier = Modifier.padding(top = 8.dp),
+            style = MaterialTheme.typography.bodyLarge
+        )
         Text("Заглушка: поле и ходы — позже", modifier = Modifier.padding(top = 8.dp))
+        Button(onClick = onBack, modifier = Modifier.padding(top = 24.dp)) {
+            Text("В меню")
+        }
+    }
+}
+
+@Composable
+fun TournamentPlaceholderScreen(
+    modifier: Modifier = Modifier,
+    onBack: () -> Unit
+) {
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .padding(24.dp),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text("Турнир", style = MaterialTheme.typography.headlineSmall)
+        Text(
+            "Заглушка: участники и сетка — позже",
+            modifier = Modifier.padding(top = 8.dp)
+        )
         Button(onClick = onBack, modifier = Modifier.padding(top = 24.dp)) {
             Text("Назад")
         }
