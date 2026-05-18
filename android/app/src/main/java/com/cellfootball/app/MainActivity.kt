@@ -33,6 +33,8 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.cellfootball.app.game.GameMode
+import com.cellfootball.app.ui.GameScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -48,11 +50,6 @@ class MainActivity : ComponentActivity() {
 
 private enum class Screen {
     Menu, ModeSelection, Game, Tournament, Rules
-}
-
-private enum class GameMode(val label: String) {
-    VsAi("Против ИИ"),
-    LocalPvp("Два игрока")
 }
 
 @Composable
@@ -80,10 +77,10 @@ fun CellFootballApp() {
                 onTournament = { screen = Screen.Tournament },
                 onBack = { screen = Screen.Menu }
             )
-            Screen.Game -> GamePlaceholderScreen(
+            Screen.Game -> GameScreen(
                 modifier = Modifier.padding(innerPadding),
                 mode = selectedMode,
-                onBack = { screen = Screen.Menu }
+                onBackToMenu = { screen = Screen.Menu }
             )
             Screen.Tournament -> TournamentPlaceholderScreen(
                 modifier = Modifier.padding(innerPadding),
@@ -191,32 +188,6 @@ fun ModeSelectionScreen(
             Button(onClick = onBack, modifier = Modifier.padding(top = 24.dp)) {
                 Text("Назад")
             }
-        }
-    }
-}
-
-@Composable
-private fun GamePlaceholderScreen(
-    modifier: Modifier = Modifier,
-    mode: GameMode?,
-    onBack: () -> Unit
-) {
-    Column(
-        modifier = modifier
-            .fillMaxSize()
-            .padding(24.dp),
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
-    ) {
-        Text("Игровой экран", style = MaterialTheme.typography.headlineSmall)
-        Text(
-            text = "Режим: ${mode?.label ?: "—"}",
-            modifier = Modifier.padding(top = 8.dp),
-            style = MaterialTheme.typography.bodyLarge
-        )
-        Text("Заглушка: поле и ходы — позже", modifier = Modifier.padding(top = 8.dp))
-        Button(onClick = onBack, modifier = Modifier.padding(top = 24.dp)) {
-            Text("В меню")
         }
     }
 }
